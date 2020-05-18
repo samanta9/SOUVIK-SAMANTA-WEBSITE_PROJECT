@@ -1,0 +1,121 @@
+<html>
+    <head>
+	
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+         
+         <title> Reg </title>
+      <style>
+	  body{
+	 background-color:#00fff8;
+	   }
+	   
+	   #dept
+	   {
+	   position:absolute;
+	   width:100px;
+	   
+	   }
+	   form
+	   {
+	   position:absolute;
+	   left: 300px;
+	   top:100px;
+	   }
+	   #f{
+	   height:400px;
+	   width:500px;
+	   
+	   }
+	   #f2
+	   {
+	    background-color:DodgerBlue;
+		color:white;
+	   }
+	   
+	   #button
+	   {
+	   position:absolute;
+	   left: 120px;
+	   top:320px;
+	   padding:5px 12px;
+	   
+	   }
+	   #re{
+	   position:absolute;
+	   left: 220px;
+	   top:320px;
+	    padding:5px 12px;
+	   }
+		   
+	</style>
+
+
+    </head>
+
+  <body>
+  <form name="das" onsubmit="s()" method="post">
+  <fieldset id="f">
+    <fieldset id ="f2">
+	REGESTRATION 
+	 </fieldset><br>
+  <label for="fname">Full name:</label>
+  <label  style="color:red;"> *</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+   <label for="dept">Gender:</label>
+  <select id="dept" name="dept" >
+  <option value="male" selected >Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br><br>
+  <label for="emailid">Email Id:</label>
+  <label  style="color:red;"> *</label>
+  <input type="email" id="emailid" name="emailid" required ><br><br> 
+  <label for="un">USERNAME:</label>
+  <label  style="color:red;"> *</label>
+  <input type="text" id="un" name="un" required ><br><br> 
+    <label for="pa">PASSWORD:</label>
+  <label  style="color:red;"> *</label>
+  <input type="text" id="pa" name="pa" required > <br>
+  <p style="color:red;"> NOTE : * means the field should be filled , it can not be empty. </p>
+  
+  <br> <br>
+  <input type="submit" id="button" value="Submit">   
+  <input type="reset" id ="re" value="Clear">
+  
+    </fieldset>
+</form>
+
+	<script>
+	function s(){
+		 if(confirm("are you want to submit ?"))
+					 {
+						u();
+					  
+					 }
+					 else{
+					 alert("not submitted");
+					 }
+					 
+				}
+function u() {
+  var x = document.forms["das"]["fname"].value;
+   var y = document.forms["das"]["dept"].value;
+    var z= document.forms["das"]["emailid"].value;
+	 var w= document.forms["das"]["un"].value;
+	  var b = document.forms["das"]["pa"].value;
+	  
+	  
+    alert("your registration is completed sucessfully !!! , please go back log in page .");
+	close();
+	
+	
+	//document.write("name:"+x+"\n","gender"+y+"\n","email:"+z+"\n","user:"+w+"\n","pass:"+b);
+	
+  }
+
+</script>
+ </body>
+
+</html>

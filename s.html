@@ -1,0 +1,199 @@
+<html>
+    <head>
+	
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+         <title> login </title>
+      <style>
+	  body{
+	  
+	 background-image: url("https://superdevresources.com/wp-content/uploads/2015/12/new-york-background.jpg");
+
+	  background-repeat:no-repeat;
+	  background-size:cover;
+	    background-attachment:fixed;
+	  
+	  }
+	  	
+ul {
+  list-style-type: none;
+  margin: 0;
+  position:absolute;
+  top:1px;
+  left:1px;
+  width:100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+  }
+
+.active,.bar ul li:hover{
+background:#2bab0d;
+border-radius:3px;
+
+
+}
+.bar .fa{
+
+margin-right:8px;
+
+}
+	
+
+         form{
+            position:relative;
+              box-shadow:5px 10px 18px #888888;
+              border:1px solid;
+			  padding:150px 100px;
+			  background-color:#ffffff;
+			  background-repeat:no-repeat;
+			  background-size:cover;
+			  margin:100px 300px;
+			  width:18%;
+            }	 
+    .l {
+	  position:absolute;
+	  top:5px;
+	  left:150px;
+	  padding:5px 25px;
+	  }
+	  .l h2{
+	  padding:5px 15px;
+	  border:1px solid;
+	  color:blue;
+	  
+	  }
+	  
+	  
+	  
+         input[type=submit]{
+		  
+		  background-color:lightskyblue;
+		  margin:auto 80px;
+		  padding:10px 30px;
+		  border-radius:10px;
+		  }
+
+
+
+
+
+	.button{
+		   
+		       position:absolute;
+               left:380px;
+               top:500px;
+			   padding:5px 20px ;
+			   background-color:lightskyblue;
+			    border-radius:20px;
+		   }
+
+        .link a
+		{
+		 position:absolute;
+              left:550px;
+               top:500px;
+			   font-size:20px;
+			   font-size:20px;
+			  text-decoration:none;
+		}
+		   
+			 
+		
+footer{
+font-size:15px;
+font-weight:bold;
+text-align:center;
+padding:10px 0px;
+background:#594848;
+color:white;
+font-family:Arial;
+position:absolute;
+left:1px;
+bottom:2px;
+height:3%;
+width:100%;
+
+}	 
+   </style>
+   
+   <script >
+   
+   function ck(){
+		 if(confirm("are you want to submit ?"))
+					 {
+						y();
+					  
+					 }
+					 else{
+					 alert("not submitted");
+					 }
+}
+function y() {
+  var x = document.forms["myForm"]["fname"].value;
+    var z = document.forms["myForm"]["pass"].value;
+  
+  if (x == "samanta" && z== "Souvik@1") {
+	  alert("login sucessfully");
+   open("log.html");
+  }
+  else
+  { alert("invalid user or password !");
+  }
+}
+   </script>
+   
+   
+   
+   
+    </head>
+
+  <body>
+  <div class="bar">
+<ul>
+  <li ><a href="file:///E:/practice/html/PROJECT/web.html" ><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+  <li ><a href="file:///E:/practice/html/PROJECT/news.html"><i class="fa fa-bell" aria-hidden="true"></i>News</a></li>
+  <li><a href="file:///E:/practice/html/PROJECT/contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+   <li class="active"><a href="file:///E:/practice/html/PROJECT/s.html"><i class="fa fa-users" aria-hidden="true"></i>Log In</a></li>
+</ul>
+</div>
+<form  name="myForm" onsubmit="ck()" method="post">
+  <div class ="l">
+<h2>SIGN IN </h2>
+</div>   
+  <label for="fname" style="color:red; margin:5px;">USERNAME</label>
+  <input type="text" id="fname" name="fname" placeholder= " username min(6) max(15) " size="21" minlength="6"  maxlength="15"  autocomplete="off" required><br><br><br>
+  <label for="pass" style="color:red;margin:5px;">PASSWORD </label>
+  <input type="password" id="pass" name="pass" placeholder=" password min(4) max (8)" size="21"  minlength="4" maxlength="8"  autocomplete="off"  required> <br> <br> <br>
+  <input type="submit" value="SUBMIT">
+</form>
+<button class="button" onclick="window.open('file:///E:/practice/html/PROJECT/reg.html');"> Register </button>
+<div class ="link">
+ <a href="file:///E:/practice/html/PROJECT/fgpass.html" target="_blank">forgot  Password </a>
+ </div>
+ 
+ <footer>
+@  THIS  WILL  ACT  ALL  RIGHT  RESERVED
+</footer>
+ </body>
+
+</html>

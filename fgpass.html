@@ -1,0 +1,99 @@
+<html>
+    <head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+         
+		 
+		 <title>password change</title>
+
+       <style>
+	   
+	   .f {
+	   position:absolute;
+	   top:0px;
+	   left:0px;
+	   width:100%;
+	   border-bottom:1px solid;
+	   }
+	   .f h3{
+	   margin:10px auto;
+	   padding:5px 15px;
+	   
+	   
+	   }
+	   #s{
+	   position:relative;
+	   border:1px solid;
+	   padding:100px 50px;
+	   margin:50px auto;
+	   width:40%;
+	   }
+	   #eml {
+	   position:relative;
+	   display:flex;
+	   margin:7px;
+	   padding:7px;
+	   
+	   }
+	  #b{
+	   position:absolute;
+	   top:200px;
+	   left:215px;
+	   color:blue;
+	   padding:5px 15px;
+	   }
+	   
+	   </style>
+
+
+
+
+
+	</head>
+	
+    <body>
+	<form  name="my" id="s" onsubmit="s()"   method="post">
+	<div class ="f">
+	<h3 >Reset Password </h3>
+	</div>
+	
+	<label for="eml" > ENTER YOUR EMAIL   </label>
+	<input type="email" id="eml" name="emailid" placeholder="  enter your email id" size="35" autocomplete="off" required><br><br>
+	 <button id="b"  > SUBMIT </button>
+	</form>
+	
+	
+		<script>
+	function s(){
+		 if(confirm("are you want to submit ?"))
+					 {
+						u();
+					  
+					 }
+					 else{
+					 alert("not submitted");
+					 }
+					 
+				}
+function u() {
+  var x = document.forms["my"]["emailid"].value;
+	  
+	  if (x=="ssamanta166@gmail.com"){
+	  
+    alert("you will get an email, please check your mail. Thank you !!!");
+	close();
+	
+	//document.write("EMAIL ID: "+ x);
+	}
+	
+	else {
+	    alert("your email id is not registered or invalid");
+	}
+  }
+
+</script>
+	</body>
+	
+</html>
+	
